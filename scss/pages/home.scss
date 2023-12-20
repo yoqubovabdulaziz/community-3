@@ -2,6 +2,17 @@
 @use "../global";
 @use "../utils/variables" as var;
 
+#hero,
+#about,
+#expertise,
+#service,
+#process,
+#customer,
+#blog,
+#subscribe {
+  transition: 0.5s;
+}
+
 #hero {
   background-color: var.$bgc-black;
 }
