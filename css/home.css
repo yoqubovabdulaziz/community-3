@@ -106,12 +106,17 @@ button {
   position: fixed;
   bottom: -38px;
   right: 50%;
-  left: 46%;
+  left: 50%;
   font-size: 35px;
   color: #000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 100;
+}
+@media (max-width: 500px) {
+  #backtop {
+    left: 45%;
+  }
 }
 
 #backtop.backtop-show {

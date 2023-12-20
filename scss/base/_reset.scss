@@ -34,11 +34,14 @@ button {
   position: fixed;
   bottom: -38px;
   right: 50%;
-  left: 46%;
+  left: 50%;
   font-size: 35px;
   color: var.$black-color;
   transition: 0.5s;
   z-index: 100;
+  @media (max-width: 500px) {
+    left: 45%;
+  }
 }
 
 #backtop.backtop-show {
