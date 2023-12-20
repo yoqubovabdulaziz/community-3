@@ -106,6 +106,7 @@ button {
   position: fixed;
   bottom: -38px;
   right: 50%;
+  left: 46%;
   font-size: 35px;
   color: #000;
   -webkit-transition: 0.5s;
