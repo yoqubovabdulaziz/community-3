@@ -138,7 +138,7 @@ button {
 .dark #blog,
 .dark #subscribe,
 .dark #footer {
-  background-color: var.$black-color;
+  background-color: var.$bgc-black;
 }
 
 .dark #about *,
@@ -157,7 +157,8 @@ button {
 .dark #service .service__card a,
 .dark #blog a,
 .dark #footer .footer__bottom p {
-  color: var.$blue-color;
+  color: var.$black-color;
+  color: var.$bgc-pink;
   transition: 0.5s;
 }
 
@@ -167,6 +168,14 @@ button {
 .dark #customer .customer__card,
 .dark #blog .blog__left__content,
 .dark #subscribe .subscribe {
-  background-color: #333;
   transition: 0.5s;
+  background-color: var.$blue-color;
+}
+
+.dark .subscribe {
+  box-shadow: 0 0 20px 5px var.$blue-color;
+}
+
+.dark #navbar.navbar-shrink {
+  box-shadow: 0 0 10px 1px var.$white-color;
 }

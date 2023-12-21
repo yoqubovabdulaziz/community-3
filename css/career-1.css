@@ -183,7 +183,7 @@ button {
 .dark #blog,
 .dark #subscribe,
 .dark #footer {
-  background-color: #000;
+  background-color: #232536;
 }
 
 .dark #about *,
@@ -203,7 +203,8 @@ button {
 .dark #service .service__card a,
 .dark #blog a,
 .dark #footer .footer__bottom p {
-  color: #444CFC;
+  color: #000;
+  color: #FFE6D2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -214,9 +215,19 @@ button {
 .dark #customer .customer__card,
 .dark #blog .blog__left__content,
 .dark #subscribe .subscribe {
-  background-color: #333;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #444CFC;
+}
+
+.dark .subscribe {
+  -webkit-box-shadow: 0 0 20px 5px #444CFC;
+          box-shadow: 0 0 20px 5px #444CFC;
+}
+
+.dark #navbar.navbar-shrink {
+  -webkit-box-shadow: 0 0 10px 1px #FFF;
+          box-shadow: 0 0 10px 1px #FFF;
 }
 
 .container__1320,

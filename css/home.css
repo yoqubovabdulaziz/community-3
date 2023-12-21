@@ -246,7 +246,7 @@ button {
 .dark #blog,
 .dark #subscribe,
 .dark #footer {
-  background-color: #000;
+  background-color: #232536;
 }
 
 .dark #about *,
@@ -266,7 +266,8 @@ button {
 .dark #service .service__card a,
 .dark #blog a,
 .dark #footer .footer__bottom p {
-  color: #444CFC;
+  color: #000;
+  color: #FFE6D2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -277,9 +278,19 @@ button {
 .dark #customer .customer__card,
 .dark #blog .blog__left__content,
 .dark #subscribe .subscribe {
-  background-color: #333;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #444CFC;
+}
+
+.dark .subscribe {
+  -webkit-box-shadow: 0 0 20px 5px #444CFC;
+          box-shadow: 0 0 20px 5px #444CFC;
+}
+
+.dark #navbar.navbar-shrink {
+  -webkit-box-shadow: 0 0 10px 1px #FFF;
+          box-shadow: 0 0 10px 1px #FFF;
 }
 
 .container__1320,
@@ -736,11 +747,18 @@ button {
   margin-bottom: 30px;
   display: inline-block;
   position: relative;
+  border: 2px solid #444CFC;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .hero__link .shape-1 {
   position: absolute;
   left: 0;
   top: 0;
+}
+.hero__link:hover {
+  background-color: #232536;
+  color: #444CFC;
 }
 .hero__right {
   max-width: 532px;
@@ -967,9 +985,46 @@ button {
   font-family: Poppins500;
   font-size: 16px;
   line-height: 24px;
+  position: relative;
+  padding: 3px;
 }
 .about__bottom a img {
   margin-left: 12px;
+}
+.about__bottom a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFE6D2;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.about__bottom a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFE6D2;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.about__bottom a:hover::before,
+.about__bottom a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 #expertise {
@@ -1080,6 +1135,14 @@ button {
   font-family: Poppins500;
   font-size: 14px;
   line-height: 20px;
+}
+.expertise__card:hover {
+  background-color: #444CFC;
+  -webkit-box-shadow: 0 0 10px 1px #444CFC;
+          box-shadow: 0 0 10px 1px #444CFC;
+}
+.expertise__card:hover * {
+  color: #FFF;
 }
 .expertise__card__3 {
   position: relative;
@@ -1200,9 +1263,54 @@ button {
   font-family: Poppins500;
   font-size: 16px;
   line-height: 24px;
+  position: relative;
+  padding: 3px 0;
 }
 .service__card a img {
   margin-left: 12px;
+}
+.service__card a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5px;
+  background-color: #FFE6D2;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.service__card a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFE6D2;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.service__card a:hover::before,
+.service__card a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.service__card:hover {
+  background-color: #444CFC;
+  -webkit-box-shadow: 0 0 10px 1px #444CFC;
+          box-shadow: 0 0 10px 1px #444CFC;
+}
+.service__card:hover * {
+  color: #FFF;
 }
 .service__link {
   margin-bottom: 80px;
@@ -1313,6 +1421,15 @@ button {
   font-family: Poppins400;
   font-size: 16px;
   line-height: 24px;
+}
+.process__card:hover {
+  border-color: #444CFC;
+  background-color: #444CFC;
+  -webkit-box-shadow: 0 0 10px 1px #444CFC;
+          box-shadow: 0 0 10px 1px #444CFC;
+}
+.process__card:hover * {
+  color: #FFF;
 }
 .process__card__dec {
   -webkit-box-orient: vertical;
@@ -1558,7 +1675,44 @@ button {
   font-family: Poppins500;
   font-size: 16px;
   line-height: 24px;
+  position: relative;
+  padding: 2px;
 }
 .blog__left__content a img {
   margin-left: 10px;
+}
+.blog__left__content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFE6D2;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.blog__left__content a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FFE6D2;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.blog__left__content a:hover::before,
+.blog__left__content a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
