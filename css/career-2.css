@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Poppins400;
   src: url(../../assets/fonts/Poppins-Regular.ttf);
@@ -365,4 +366,131 @@ button {
   color: #FFF;
   font-family: Poppins500;
   font-size: 18px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 200px 0 100px 0;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 30px;
+}
+
+.home-left-title {
+  color: var(--Black, #232536);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.home-left-list {
+  padding: 20px 0 10px 0;
+  color: var(--Black, #232536);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+}
+.home-left-text {
+  max-width: 430px;
+  color: var(--Black, #232536);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.home-left-links {
+  width: 182px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#444CFC), to(#444CFC));
+  background: linear-gradient(180deg, #444CFC 0%, #444CFC 100%);
+  padding: 20px 0 20px 30px;
+}
+.home-left-link {
+  color: #FFF;
+  opacity: 0.87;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.text {
+  padding: 0 100px 15px 80px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.home-right {
+  max-width: 515px;
+  background: #FFE0C7;
+}
+.home-right-title {
+  padding: 40px 200px 24px 82px;
+  color: var(--Black, #232536);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.home-right-list-text {
+  padding-bottom: 80px;
+}
+.home-right-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.form-title {
+  color: #232536;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  padding-bottom: 30px;
+}
+
+.name,
+.last__name,
+.emale,
+.number {
+  max-width: 624px;
+}
+.name input,
+.last__name input,
+.emale input,
+.number input {
+  width: 100%;
+}
+
+.names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
