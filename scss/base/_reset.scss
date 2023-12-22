@@ -137,7 +137,13 @@ button {
 .dark #customer,
 .dark #blog,
 .dark #subscribe,
-.dark #footer {
+.dark #footer,
+.dark .header__row,
+.dark #support,
+.dark #bring,
+.dark #help,
+.dark #adv,
+.dark #local {
   background-color: var.$bgc-black;
 }
 
@@ -148,7 +154,13 @@ button {
 .dark #customer *,
 .dark #blog *,
 .dark #footer *,
-.dark #backtop {
+.dark #backtop,
+.dark .header__row *,
+.dark #support *,
+.dark #bring *,
+.dark #help *,
+.dark #adv *,
+.dark #local * {
   color: var.$white-color;
   transition: 0.5s;
 }
