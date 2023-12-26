@@ -188,7 +188,11 @@ button {
 .dark #bring,
 .dark #help,
 .dark #adv,
-.dark #local {
+.dark #local,
+.dark #company,
+.dark #story,
+.dark #vision,
+.dark #team {
   background-color: #232536;
 }
 
@@ -205,7 +209,13 @@ button {
 .dark #bring *,
 .dark #help *,
 .dark #adv *,
-.dark #local * {
+.dark #local *,
+.dark #company *,
+.dark #story p,
+.dark #story .story__heading,
+.dark #story .story__title,
+.dark #vision *,
+.dark #team * {
   color: #FFF;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -622,4 +632,45 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.breaking__title {
+  max-width: 624px;
+  color: #232536;
+  font-family: Poppins600;
+  font-style: normal;
+  line-height: 58px; /* 120.833% */
+}
+.breaking__text {
+  max-width: 624px;
+  color: #232536;
+  font-family: Poppins400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.breaking .rotate {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.breaking .link1 {
+  margin-top: 24px;
+  font-family: Poppins500;
+  line-height: 24px;
+  opacity: 0.87;
+}
+.breaking .right {
+  height: auto;
+}
+
+.vard__desc p {
+  max-width: 341px;
+}
+.vard__desc h4 {
+  max-width: 341px;
+}
+
+.breaking__info h4 {
+  max-width: 264px;
 }

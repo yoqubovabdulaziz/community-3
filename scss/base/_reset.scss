@@ -143,7 +143,11 @@ button {
 .dark #bring,
 .dark #help,
 .dark #adv,
-.dark #local {
+.dark #local,
+.dark #company,
+.dark #story,
+.dark #vision,
+.dark #team {
   background-color: var.$bgc-black;
 }
 
@@ -160,7 +164,13 @@ button {
 .dark #bring *,
 .dark #help *,
 .dark #adv *,
-.dark #local * {
+.dark #local *,
+.dark #company *,
+.dark #story p,
+.dark #story .story__heading,
+.dark #story .story__title,
+.dark #vision *,
+.dark #team *  {
   color: var.$white-color;
   transition: 0.5s;
 }

@@ -1,2 +1,399 @@
+@use "../components/subscribe";
 @use "../global";
 @use "../utils/variables" as var;
+
+#company {
+  background-color: var.$white-color;
+}
+
+.hero {
+  padding: 180px 20px 96px;
+  &__top {
+    &__heading {
+      color: var.$black-color;
+      font-family: var.$primary-font;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      max-width: 664px;
+      color: var.$text-color-1;
+      font-family: var.$secondary-font;
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 24px;
+      @media (max-width: 450px) {
+        font-size: 35px;
+        line-height: 48px;
+      }
+      @media (max-width: 330px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    &__paragraph {
+      max-width: 719px;
+      color: #232536;
+      font-family: var.$tertiary-font;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 64px;
+    }
+  }
+}
+.about__center {
+  margin-bottom: 48px;
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    @media (max-width: 1300px) {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+      gap: 50px;
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+      gap: 50px;
+    }
+    &__img {
+      position: relative;
+      .about__img {
+        width: 100%;
+      }
+      .about__big__shape {
+        position: absolute;
+        height: 100%;
+      }
+    }
+  }
+}
+
+#story {
+  background-color: var.$white-color;
+}
+
+.story {
+  padding-bottom: 96px;
+  &__row {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 96px;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__left {
+    h6 {
+      color: var.$text-color-1;
+      font-family: var.$secondary-font;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+    h3 {
+      max-width: 550px;
+      color: var.$text-color-1;
+      font-family: var.$secondary-font;
+      font-size: 36px;
+      line-height: 54px;
+      margin-bottom: 24px;
+    }
+    p {
+      max-width: 550px;
+      color: var.$text-color-1;
+      font-family: var.$tertiary-font;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__right {
+    max-width: 624px;
+    background-color: var.$bgc-pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 62px 214px 80px 110px;
+    // @media (max-width: 440px) {
+    //   padding-right: 0;
+    // }
+    h3 {
+      color: var.$text-color-1;
+      font-family: var.$secondary-font;
+      font-size: 36px;
+      line-height: 54px;
+      margin-bottom: 8px;
+    }
+    h6 {
+      color: var.$text-color-1;
+      font-family: var.$secondary-font;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    gap: 32px;
+    background-color: #fafafc;
+    @media (max-width: 1160px) {
+      grid-template-columns: repeat(4, auto);
+    }
+    @media (max-width: 860px) {
+      grid-template-columns: repeat(3, auto);
+    }
+    @media (max-width: 660px) {
+      grid-template-columns: repeat(2, auto);
+    }
+    @media (max-width: 460px) {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+}
+
+#expertise {
+  background-color: var.$bgc-noyob;
+}
+
+.expertise {
+  padding: 96px 20px;
+  display: flex;
+  gap: 141px;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__left {
+    .expertise__heading {
+      color: var.$black-color;
+      font-family: var.$primary-font;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h2 {
+      max-width: 622px;
+      color: var.$text-color-1;
+      font-family: var.$secondary-font;
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 24px;
+      @media (max-width: 400px) {
+        font-size: 35px;
+        line-height: 50px;
+      }
+      @media (max-width: 350px) {
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+    .expertise__paragraph {
+      max-width: 622px;
+      color: var.$p-color;
+      font-family: var.$tertiary-font;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__card {
+    max-width: 515px;
+    background-color: var.$white-color;
+    padding: 32px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 16px;
+    @media (max-width: 370px) {
+      flex-direction: column;
+    }
+    &__img {
+      width: 47px;
+      height: 47px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var.$bgc-pink;
+      border-radius: 30px;
+      padding: 11px;
+    }
+    h6 {
+      color: var.$black-color;
+      font-family: var.$secondary-font;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+    p {
+      max-width: 303px;
+      color: var.$p-color;
+      font-family: var.$primary-font;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &__card:hover {
+    background-color: var.$blue-color;
+    box-shadow: 0 0 10px 1px var.$blue-color;
+  }
+  &__card:hover * {
+    color: var.$white-color;
+  }
+  &__card__3 {
+    position: relative;
+    flex-direction: column;
+    .expertise__card__box {
+      display: flex;
+      gap: 16px;
+      @media (max-width: 370px) {
+        flex-direction: column;
+      }
+    }
+    .expertise__shape {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+#vision {
+  background-color: var.$white-color;
+}
+
+.vision {
+  padding: 96px 20px;
+  &__heading {
+    color: var.$black-color;
+    font-family: var.$primary-font;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h3 {
+    max-width: 701px;
+    color: var.$text-color-1;
+    font-family: var.$secondary-font;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 24px;
+    @media (max-width: 430px) {
+      font-size: 30px;
+      line-height: 43px;
+    }
+  }
+  &__paragraph {
+    max-width: 622px;
+    color: var.$text-color-1;
+    font-family: var.$tertiary-font;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 64px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#team {
+  background-color: var.$white-color;
+}
+
+.team {
+  &__heading {
+    color: var.$black-color;
+    font-family: var.$primary-font;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h2 {
+    max-width: 624px;
+    color: var.$text-color-1;
+    font-family: var.$secondary-font;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 24px;
+    @media (max-width: 500px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  &__paragraph {
+    max-width: 505px;
+    color: var.$text-color-1;
+    font-family: var.$tertiary-font;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 64px;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 1300px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 660px) {
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+    }
+    &__img {
+      position: relative;
+      overflow: hidden;
+      max-width: 320px;
+      height: 320px;
+      &__inform {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        opacity: 0.1;
+        background: rgba(35, 37, 54, 0.99);
+        padding-left: 46px;
+        transition: 0.4s;
+        h4 {
+          color: var.$white-color;
+          font-family: var.$secondary-font;
+          font-size: 24px;
+          line-height: 36px;
+          margin-bottom: 8px;
+        }
+        p {
+          color: var.$white-color;
+          font-family: var.$primary-font;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 24px;
+        }
+        div {
+          padding-bottom: 48px;
+          display: flex;
+          gap: 27px;
+        }
+      }
+      &__inform:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
