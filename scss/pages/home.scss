@@ -60,11 +60,17 @@
     margin-bottom: 30px;
     display: inline-block;
     position: relative;
+    border: 2px solid var.$blue-color;
+    transition: 0.5s;
     .shape-1 {
       position: absolute;
       left: 0;
       top: 0;
     }
+  }
+  &__link:hover {
+    background-color: var.$bgc-black;
+    color: var.$blue-color;
   }
   &__right {
     max-width: 532px;
@@ -244,9 +250,39 @@
       font-family: var.$primary-font;
       font-size: 16px;
       line-height: 24px;
+      position: relative;
+      padding: 3px;
       img {
         margin-left: 12px;
       }
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var.$bgc-pink;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.5s;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var.$bgc-pink;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: 0.5s;
+    }
+    a:hover::before,
+    a:hover::after {
+      transform: scaleX(1);
     }
   }
 }
@@ -332,6 +368,13 @@
       font-size: 14px;
       line-height: 20px;
     }
+  }
+  &__card:hover {
+    background-color: var.$blue-color;
+    box-shadow: 0 0 10px 1px var.$blue-color;
+  }
+  &__card:hover * {
+    color: var.$white-color;
   }
   &__card__3 {
     position: relative;
@@ -427,10 +470,47 @@
       font-family: var.$primary-font;
       font-size: 16px;
       line-height: 24px;
+      position: relative;
+      padding: 3px 0;
       img {
         margin-left: 12px;
       }
     }
+    a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3.5px;
+      background-color: var.$bgc-pink;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.5s;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var.$bgc-pink;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: 0.5s;
+    }
+    a:hover::before,
+    a:hover::after {
+      transform: scaleX(1);
+    }
+  }
+  &__card:hover {
+    background-color: var.$blue-color;
+    box-shadow: 0 0 10px 1px var.$blue-color;
+  }
+  &__card:hover * {
+    color: var.$white-color;
   }
   &__link {
     margin-bottom: 80px;
@@ -517,6 +597,14 @@
       font-size: 16px;
       line-height: 24px;
     }
+  }
+  &__card:hover {
+    border-color: var.$blue-color;
+    background-color: var.$blue-color;
+    box-shadow: 0 0 10px 1px var.$blue-color;
+  }
+  &__card:hover * {
+     color: var.$white-color;
   }
   &__card__dec {
     flex-direction: column;
@@ -720,10 +808,41 @@
         font-family: var.$primary-font;
         font-size: 16px;
         line-height: 24px;
+        position: relative;
+        padding: 2px;
         img {
           margin-left: 10px;
         }
       }
+      a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var.$bgc-pink;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 0.5s;
+      }
+      a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var.$bgc-pink;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: 0.5s;
+      }
+      a:hover::before,
+      a:hover::after {
+        transform: scaleX(1);
+      }
     }
   }
 }
+

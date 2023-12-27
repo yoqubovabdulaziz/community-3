@@ -14,11 +14,11 @@ document.querySelector(".toggle-btn").addEventListener("click", () => {
 document.querySelector(".mode-btn").addEventListener("click", () => {
   document.body.classList.toggle("dark");
   if (document.body.classList.contains("dark")) {
-    document.querySelector(".icon").classList.remove("fa-moon");
-    document.querySelector(".icon").classList.add("fa-sun");
+    document.querySelector(".mode").classList.remove("fa-moon");
+    document.querySelector(".mode").classList.add("fa-sun");
   } else {
-    document.querySelector(".icon").classList.remove("fa-sun");
-    document.querySelector(".icon").classList.add("fa-moon");
+    document.querySelector(".mode").classList.remove("fa-sun");
+    document.querySelector(".mode").classList.add("fa-moon");
   }
 });
 
@@ -70,12 +70,4 @@ function toggleBacktop() {
   }
 }
 
-// LOADING
 
-const loading = document.getElementById("loading");
-
-const loadingDuration = 2600; // 2s
-
-setTimeout(() => {
-  loading.classList.add("loading-none");
-}, loadingDuration);
