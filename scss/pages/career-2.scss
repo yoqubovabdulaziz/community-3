@@ -1,2 +1,111 @@
 @use "../global";
 @use "../utils/variables" as var;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0 100px 0;
+    column-gap: 60px;
+    row-gap: 30px;
+}
+
+
+.home-left {
+    &-title {
+            color: var(--Black, #232536);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+    &-list {
+        padding: 20px 0 10px 0;
+        color: var(--Black, #232536);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+    }  
+    
+    &-text {
+        max-width: 430px;
+        color: var(--Black, #232536);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &-links {
+        width: 182px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: linear-gradient(180deg, #444CFC 0%, #444CFC 100%);
+        padding: 20px 0 20px 30px;
+    }
+    &-link {
+        color: #FFF;
+        opacity: 0.87;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+.text {
+    padding:0 100px 15px 80px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.home-right {
+    max-width: 515px;
+    background: #FFE0C7;
+    &-title {
+        padding:40px 200px 24px 82px;
+        color: var(--Black, #232536);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+    &-list-text {
+        padding-bottom: 80px;
+    }
+    &-img {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.form-title {
+    color: #232536;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    padding-bottom: 30px;
+}
+
+.name,
+.last__name,
+.emale,
+.number {
+    max-width: 624px;
+    input {
+        width: 100%;
+    }
+}
+
+.names {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
