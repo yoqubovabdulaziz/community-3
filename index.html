@@ -28,6 +28,12 @@
     <link rel="stylesheet" href="css/home.min.css" />
   </head>
   <body>
+    <a id="backtop" href="#">
+      <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
+    <div id="loading">
+      <span class="loader"></span>
+    </div>
     <header id="navbar">
       <nav class="container__1320 nav">
         <a href="#">
@@ -54,7 +60,7 @@
         </ul>
         <div class="nav__end">
           <button class="mode-btn">
-            <span class="circle"><i class="icon fas fa-moon"></i></span>
+            <span class="circle"><i class="icon fas fa-moon fa-moon"></i></span>
           </button>
           <button id="navbar-open">
             <i class="fa-solid fa-bars"></i>
@@ -70,7 +76,7 @@
         <button id="navbar-close">
           <i class="fa-regular fa-circle-xmark"></i>
         </button>
-        <li><a class="active__nav" href="#">Home</a></li>
+        <li><a id="active__nav" href="#">Home</a></li>
         <li><a href="pages/service.html">Service</a></li>
         <li><a href="pages/company.html">Company</a></li>
         <li><a href="pages/career-1.html">Career</a></li>
@@ -657,6 +663,71 @@
         </div>
       </section>
     </main>
+    <footer id="footer">
+      <div class="container__1320 footer">
+        <img src="assets/images/footer__shape1.svg" alt="" />
+        <div class="footer__row">
+          <div class="footer__left">
+            <h2 class="footer__title">Let's make something special</h2>
+            <h4 class="footer__title__2">Let's talk! 🤙</h4>
+            <p class="footer__number">020 7993 2905</p>
+            <p class="footer__gmail">hi@finsweet.com</p>
+          </div>
+          <div class="footer__right">
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Home</a></li>
+              <li><a class="footer__link" href="pages/service.html">Service</a></li>
+              <li><a class="footer__link" href="pages/company.html">Company</a></li>
+              <li><a class="footer__link" href="pages/career-1.html">Career </a></li>
+              <li><a class="footer__link" href="pages/blog-1.html">News</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="pages/service.html">Service</a></li>
+              <li><h6>Technical support</h6></li>
+              <li><h6>Testing</h6></li>
+              <li><h6>Development</h6></li>
+              <li><h6>AWS/Azure </h6></li>
+              <li><h6>Consulting</h6></li>
+              <li><h6>Information Technology</h6></li>
+            </ul>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Resourses</a></li>
+              <li><h6>About Us</h6></li>
+              <li><h6>Testimonial</h6></li>
+              <li><h6>Privacy Policy </h6></li>
+              <li><h6>Terms of use</h6></li>
+              <li><h6>Blog</h6></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__row__bottom">
+          <div class="footer__row__bottom__left">
+            <p>DLF Cybercity, Bhubaneswar, </p>
+            <p>India, &52050</p>
+          </div>
+          <div class="footer__row__bottom__right">
+            <img src="assets/images/footer__shape2.svg" alt="">
+            <a href="pages/contact.html">Contact Us <img src="assets/images/home-about-right-arrow.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container__1320 footer__bottom__row">
+          <div class="footer__bottom__left">
+            <a href="#">
+              <img src="assets/images/footer__logo.svg" alt="">
+            </a>
+            <p>©2021 Finsweet</p>
+          </div>
+          <div class="footer__bottom__right">
+            <img src="assets/images/facebook.svg" alt="">
+            <img src="assets/images/twitter.svg" alt="">
+            <img src="assets/images/instagram.svg" alt="">
+            <img src="assets/images/linkedin.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="

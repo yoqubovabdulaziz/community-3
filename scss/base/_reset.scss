@@ -32,17 +32,20 @@ button {
 
 #backtop {
   position: fixed;
-  right: -40px;
-  bottom: -35px;
+  bottom: -38px;
+  right: 50%;
+  left: 50%;
   font-size: 35px;
-  color: black;
+  color: var.$black-color;
   transition: 0.5s;
   z-index: 100;
+  @media (max-width: 500px) {
+    left: 45%;
+  }
 }
 
 #backtop.backtop-show {
-  right: 30px;
-  bottom: 30px;
+  bottom: 20px;
 }
 
 // BACKTOP END
@@ -51,7 +54,7 @@ button {
 
 #loading {
   position: fixed;
-  background-color: rgba(34, 34, 36, 0.8);
+  background-color: rgba(34, 34, 34, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -123,3 +126,56 @@ button {
 }
 
 // LOADING END
+
+// DARK MODE
+
+.dark #hero,
+.dark #about,
+.dark #expertise,
+.dark #service,
+.dark #process,
+.dark #customer,
+.dark #blog,
+.dark #subscribe,
+.dark #footer {
+  background-color: var.$bgc-black;
+}
+
+.dark #about *,
+.dark #expertise *,
+.dark #service *,
+.dark #process *,
+.dark #customer *,
+.dark #blog *,
+.dark #footer *,
+.dark #backtop {
+  color: var.$white-color;
+  transition: 0.5s;
+}
+
+.dark #about a,
+.dark #service .service__card a,
+.dark #blog a,
+.dark #footer .footer__bottom p {
+  color: var.$black-color;
+  color: var.$bgc-pink;
+  transition: 0.5s;
+}
+
+.dark #expertise .expertise__card,
+.dark #service .service__card,
+.dark #process .process__card,
+.dark #customer .customer__card,
+.dark #blog .blog__left__content,
+.dark #subscribe .subscribe {
+  transition: 0.5s;
+  background-color: var.$blue-color;
+}
+
+.dark .subscribe {
+  box-shadow: 0 0 20px 5px var.$blue-color;
+}
+
+.dark #navbar.navbar-shrink {
+  box-shadow: 0 0 10px 1px var.$white-color;
+}
