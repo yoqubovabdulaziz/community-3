@@ -841,6 +841,21 @@ button {
   gap: 30px;
   padding: 62px 214px 80px 110px;
 }
+@media (max-width: 435px) {
+  .story__right {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 370px) {
+  .story__right {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .story__right {
+    padding-left: 80px;
+  }
+}
 .story__right h3 {
   color: #232536;
   font-family: Poppins600;

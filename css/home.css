@@ -737,6 +737,11 @@ button {
 .hero__left {
   padding-top: 104px;
 }
+@media (max-width: 1100px) {
+  .hero__left {
+    padding-top: 0;
+  }
+}
 .hero__title {
   max-width: 624px;
   color: #FFF;
